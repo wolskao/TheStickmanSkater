@@ -20,3 +20,7 @@ func _physics_process(delta: float) -> void:
 
 	if Input.is_action_pressed("move_right"):
 		apply_torque(-rotation_force)
+		
+	if Input.is_action_just_pressed("restart"):
+		get_tree().reload_current_scene()
+		
