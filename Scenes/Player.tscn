@@ -6,10 +6,11 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vq7pl"]
 size = Vector2(512, 108)
 
-[node name="Player" type="Node2D" unique_id=1123512880]
+[node name="Player" type="CharacterBody2D" unique_id=295827543]
 
 [node name="Skateboard" type="CharacterBody2D" parent="." unique_id=1230197475]
 script = ExtResource("1_kyqiw")
+speed = 500
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Skateboard" unique_id=774361457]
 position = Vector2(0.50113976, 0.6260893)
@@ -19,3 +20,8 @@ shape = SubResource("RectangleShape2D_vq7pl")
 [node name="Sprite2D" type="Sprite2D" parent="Skateboard" unique_id=1891656877]
 scale = Vector2(0.50113976, 0.6260893)
 texture = ExtResource("1_rpqav")
+
+[node name="Camera2D" type="Camera2D" parent="Skateboard" unique_id=243339779]
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
