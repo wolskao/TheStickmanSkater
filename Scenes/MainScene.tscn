@@ -17,9 +17,12 @@ physics_material_override = SubResource("PhysicsMaterial_kyqiw")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ground" unique_id=333887805]
 position = Vector2(1156, 646)
-polygon = PackedVector2Array(0, -8, 1150, 106, 1158, 275, 7, 278)
+build_mode = 1
+polygon = PackedVector2Array(0, -8, 636.8451, -29.499344, 678.1431, -109.57357, 891.4453, -90.440796, 1246.5231, 122.85426, 1675.2561, 76.79387, 2002.66, 283.0027, 7, 278)
 
 [node name="Polygon2D" type="Polygon2D" parent="Ground" unique_id=295622607]
 position = Vector2(1166, 642)
 color = Color(0.15916517, 0.47636306, 0.2586609, 1)
-polygon = PackedVector2Array(-8, -2, 1144, 108, 1148, 276, -1, 283)
+antialiased = true
+polygon = PackedVector2Array(-8, -2, 638.7662, -26.916595, 662.18256, -113.36841, 873.35596, -97.77873, 936.3674, -44.632126, 1236.5231, 142.44392, 1669.5137, 80.79387, 1981.1647, 290.54578, -1, 283, -10.932571, -1.4062195)
+uv = PackedVector2Array(-8, -2, 638.7662, -26.916595, 662.18256, -113.36841, 873.35596, -97.77873, 936.3674, -44.632126, 1236.5231, 142.44392, 1669.5137, 80.79387, 1981.1647, 290.54578, -1, 283, -10.932571, -1.4062195)
