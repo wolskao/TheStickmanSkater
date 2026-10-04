@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://t1hw0t8fjjrf"]
+
+[ext_resource type="Script" uid="uid://buwugpsj6xhv7" path="res://Scenes/player.gd" id="1_kyqiw"]
+[ext_resource type="Texture2D" uid="uid://4acjfovfk550" path="res://Assets/Sprites/skateboardAsset.png" id="1_rpqav"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vq7pl"]
+size = Vector2(512, 108)
+
+[node name="Player" type="Node2D" unique_id=1123512880]
+
+[node name="Skateboard" type="CharacterBody2D" parent="." unique_id=1230197475]
+script = ExtResource("1_kyqiw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Skateboard" unique_id=774361457]
+position = Vector2(0.50113976, 0.6260893)
+scale = Vector2(0.50113976, 0.6260893)
+shape = SubResource("RectangleShape2D_vq7pl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Skateboard" unique_id=1891656877]
+scale = Vector2(0.50113976, 0.6260893)
+texture = ExtResource("1_rpqav")

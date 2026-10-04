@@ -1,3 +1,20 @@
 [gd_scene format=3 uid="uid://b6tykcrv43124"]
 
+[ext_resource type="PackedScene" uid="uid://t1hw0t8fjjrf" path="res://Scenes/Player.tscn" id="1_hpc76"]
+
 [node name="MainScene" type="Node2D" unique_id=624615732]
+
+[node name="Player" parent="." unique_id=1123512880 instance=ExtResource("1_hpc76")]
+position = Vector2(135, 323)
+
+[node name="Ground" type="StaticBody2D" parent="." unique_id=870214110]
+position = Vector2(-1158, -278)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ground" unique_id=333887805]
+position = Vector2(1156, 646)
+polygon = PackedVector2Array(0, -8, 1150, 106, 1158, 275, 7, 278)
+
+[node name="Polygon2D" type="Polygon2D" parent="Ground" unique_id=295622607]
+position = Vector2(1166, 642)
+color = Color(0.15916517, 0.47636306, 0.2586609, 1)
+polygon = PackedVector2Array(-8, -2, 1144, 108, 1148, 276, -1, 283)
