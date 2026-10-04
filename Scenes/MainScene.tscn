@@ -5,10 +5,11 @@
 [node name="MainScene" type="Node2D" unique_id=624615732]
 
 [node name="Player" parent="." unique_id=1123512880 instance=ExtResource("1_hpc76")]
-position = Vector2(135, 323)
+position = Vector2(129, 260)
 
 [node name="Ground" type="StaticBody2D" parent="." unique_id=870214110]
-position = Vector2(-1158, -278)
+position = Vector2(-3219.0002, -583)
+scale = Vector2(2.3487809, 1.4111907)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ground" unique_id=333887805]
 position = Vector2(1156, 646)

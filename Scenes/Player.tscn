@@ -8,9 +8,8 @@ size = Vector2(512, 108)
 
 [node name="Player" type="CharacterBody2D" unique_id=295827543]
 
-[node name="Skateboard" type="CharacterBody2D" parent="." unique_id=1230197475]
+[node name="Skateboard" type="RigidBody2D" parent="." unique_id=47734110]
 script = ExtResource("1_kyqiw")
-speed = 500
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Skateboard" unique_id=774361457]
 position = Vector2(0.50113976, 0.6260893)
